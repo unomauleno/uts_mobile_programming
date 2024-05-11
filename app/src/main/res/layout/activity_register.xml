@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="150dp"
+            android:text="REGISTER"
+            android:textColor="@color/Blue1"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_margin="20dp"
+            android:background="@color/Navy"
+            android:hint="Username"
+            android:padding="28dp"
+            android:textColorHint="@color/white"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Username"
+            android:layout_margin="20dp"
+            android:background="@color/Navy"
+            android:hint="Password"
+            android:padding="28dp"
+            android:textColorHint="@color/white"
+            />
+
+
+        <Button
+
+            android:id="@+id/BtnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Password"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="556dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
